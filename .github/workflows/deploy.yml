@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Assets & Clean
         run: |
-          npm ci
+          npm install --no-audit
           npm run build
           rm -rf node_modules/
 
